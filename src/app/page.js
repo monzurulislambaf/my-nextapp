@@ -8,7 +8,7 @@ export default function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:1337/api/contents');
+        const response = await fetch('https://my-strapi-project-client.onrender.com/api/contents');
         const result = await response.json();
         console.log(result);
         setData(result.data || []); // Ensure data is an array
